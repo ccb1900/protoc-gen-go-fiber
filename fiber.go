@@ -39,7 +39,7 @@ func generateFile(gen *protogen.Plugin, file *protogen.File, omitempty bool, omi
 	// 导入所需的包
 	g.P(`import (`)
 	g.P(`"context"`)
-	g.P(`"github.com/bufbuild/protovalidate-go"`)
+	g.P(`"buf.build/go/protovalidate"`)
 	g.P(`"github.com/gofiber/fiber/v2"`)
 	g.P(`)`)
 	g.P()
