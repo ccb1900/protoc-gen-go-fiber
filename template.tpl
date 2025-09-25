@@ -41,7 +41,7 @@ func _{{$svrType}}_{{.Name}}{{.Num}}_HTTP_Handler(srv {{$svrType}}HTTPServer) fu
 		}
 		{{- end}}
 		v, err := protovalidate.New(
-			protovalidate.WithFailFast(true),
+			protovalidate.WithFailFast(),
 		)
 		if err != nil {
 			return err
